@@ -15,26 +15,26 @@
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |    |
-//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  .  | CAPS |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ?  |  ,  |  '  |      |
+//                    | ALT | LWR | SPC |   | ENT | RSE  | GUI |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LSHFT &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &trans
-                  &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
+   &kp LSHFT &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp DOT &kp CAPS
+   &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp qu &kp DOT &kp SQT &trans
+                  &kp ALT &mo 1 &kp SPACE   &kp RET &mo 2 &kp GUI
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// | ESC  |  1  |  2  |  3  |  4  |  5  |   |    |  1  |  2  |  3  |  0  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |     |  4   | 5  |  6  |     |      |
-// | SHFT |     |     |     |     |     |   |     |  7  |  8  |  9  |     |      |
+// | ESC  |  1  |  2  |  3  |  4  |  5  |   |    |  1  |  2  |  3  |  0  | DEL |
+// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |     |  4   | 5  |  6  | ;   |      |
+// | SHFT |     |     |     |     |     |   |     |  7  |  8  |  9  |     |LEDPWROFF|
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp ESC    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &trans   &kp N1   &kp N2  &kp N3    &kp N0 &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans   &kp N4   &kp N5  &kp N6    &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &kp N7   &kp N8  &kp N9    &trans &trans
+   &kp ESC    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &trans   &kp N1   &kp N2  &kp N3    &kp N0 &kp DEL
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans   &kp N4   &kp N5  &kp N6    &kp SEMI &trans
+   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &kp N7   &kp N8  &kp N9    &trans &ext_power EP_OFF
                                     &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
                 };
