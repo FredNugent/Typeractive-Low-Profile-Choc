@@ -23,7 +23,7 @@
             then-layer = <TRI>;
         };
     };
-};
+  };
 
 
         keymap {
