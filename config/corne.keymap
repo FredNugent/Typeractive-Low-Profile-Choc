@@ -50,7 +50,7 @@
                         bindings = <
    &kp ESC   &kp N0 &kp N1 &kp N2 &kp N3  &trans     &trans &trans &trans &trans &trans &kp DEL
    &trans    &trans &kp N4 &kp N5 &kp N6  &trans     &trans &trans &trans &trans &trans &trans
-   &trans    &trans &kp N7 &kp N8 &kp N9  &trans     &trans &trans &kp N7 &kp N8 &kp N9 &trans &ext_power EP_OFF
+   &trans    &trans &kp N7 &kp N8 &kp N9  &trans     &trans &trans &kp N7 &kp N8 &kp N9 &ext_power EP_OFF
                           &kp LGUI &mo LOWER &kp SPACE    &kp RET  &mo RAISE   &kp RALT
                         >;
                 };
