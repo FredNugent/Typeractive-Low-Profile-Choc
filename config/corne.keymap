@@ -43,42 +43,42 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |      |  0  |  1  |  2  |  3 |     |    |    |     |     |     |     |         |
-// |      |     |  4  |  5  |  6 |     |    |    |     |     |     |     |         |
-// |      |     |  7  |  8  |  9 |     |    |    |     |     |     |     |LEDPWROFF|
-//                    | GUI |    | SPC |    |    |     | ALT |
+// |      |  +  |  1  |  2  |  3  |     |                |    |    |     |     |     |       
+// |      |  -  |  4  |  5  |  6  |     |                |    |    |     |     |     |         |
+// |      |  0  |  7  |  8  |  9  |     |                |    |    |     |     |     |LEDPWROFF|
+//                    | GUI | LWR | SPC |                | ENT| RSE| ALT |
                         bindings = <
-   &kp ESC   &kp N0 &kp N1 &kp N2 &kp N3  &trans     &trans &trans &trans &trans &trans &kp DEL
-   &trans    &trans &kp N4 &kp N5 &kp N6  &trans     &trans &trans &trans &trans &trans &trans
-   &trans    &trans &kp N7 &kp N8 &kp N9  &trans     &trans &trans &trans &trans &trans &ext_power EP_OFF
+   &trans &kp PLUS  &kp N1 &kp N2 &kp N3  &trans          &trans &trans &trans &trans &trans &trans
+   &trans &kp MINUS &kp N4 &kp N5 &kp N6  &trans          &trans &trans &trans &trans &trans &trans
+   &trans &kp N0    &kp N7 &kp N8 &kp N9  &trans          &trans &trans &trans &trans &trans &ext_power EP_OFF
                           &kp LGUI &mo LOWER &kp SPACE    &kp RET  &mo RAISE   &kp RALT
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  ~   |  !  |  @  |  #  |  $  |  %  |    |Home |     |Up   |     |     | BK  |
-// | SHFT |  ^  |  &  |  *  |  () | ()  |    |End  | Left|Down |Right|     |  `  |
-// |   \  |  /  |  =  |  -  | []  |  [] |    |     |  _  |  +  |     |     |     |
-//                    | GUI |     | SPC |    | ENT |     | ALT |
+// |  ~   |  !  |  @  |  #  |  $  |  %  |                         |Home |     |Up   |     |     |     |
+// | SHFT |  ^  |  &  |  *  |  () | ()  |                         |End  | Left|Down |Right|     |     |
+// |   \  |  /  |  {  |  }  | []  |  [] |                         |     |     |     |     |     |     |
+//                    | GUI | LWR | SPC |                         | ENT | RSE | ALT |
                         bindings = <
-   &kp TAB   &kp EXCL &kp AT    &kp MINUS &trans   &trans      &kp HOME  &trans         &kp UP         &kp LPAR        &kp RPAR &kp BSPC
-   &kp LCTRL &kp DLLR &kp PRCNT &kp CARET &trans   &trans      &kp END   &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &kp BSLH &kp GRAVE
-   &kp LSHFT &kp AMPS &kp STAR  &kp LPAR  &kp RPAR &trans      &kp UNDER &kp PLUS       &kp LBRC       &kp RBRC        &kp PIPE &kp TILDE
-                             &kp LGUI &mo LOWER &kp SPACE   &kp RET   &mo RAISE      &kp RALT
+   &kp TILDE &kp EXCL  &kp AT    &kp HASH  &kp DLLR &kp PRCNT     &kp HOME  &trans         &kp UP         &trans          &trans &trans
+   &kp SHFT  &kp CARET &kp AMPS  &kp STAR  &kp LPAR &kp RPAR      &kp END   &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &trans &trans
+   &kp BSLH  &kp FSLH  &kp LBRC  &kp RBRC  &kp LBKT &kp RBKT      &trans     &trans        &trans         &trans          &trans &trans
+                             &kp LGUI &mo LOWER &kp SPACE        &kp RET   &mo RAISE      &kp RALT
                         >;
                 };
 
                 tri_layer {
 // -----------------------------------------------------------------------------------------
-// |      |     |     |     |BTCLR |BTNXT|    | BT1  |DISC1|      |     |     |         |
-// |      |     |     |     |      |BTPRV|    | BT2  |DISC2|      |     |     |         |
-// |      |     |     |     |      |     |    | BT3  |DISC3|      |     |     |         |
-//                    | GUI |      | SPC |    | ENT  |     | ALT |
+// |      |     |     |     |      |     |           |BTCLR |     |      |     |     |         |
+// |      |     |     |     |      |     |           |BTSEL1|     |      |     |     |         |
+// |      |     |     |     |      |     |           |      |     |      |     |     |         |
+//                    | GUI |      | SPC |           | ENT  |     | ALT |
                         bindings = <
-   &trans &trans &trans &trans &bt BT_CLR  &bt BT_NXT     &bt BT_SEL 1   &bt BT_DISC 1 &trans &trans &trans &trans
-   &trans &trans &trans &trans &trans      &bt BT_PRV     &bt BT_SEL 2   &bt BT_DISC 2 &trans &trans &trans &trans
-   &trans &trans &trans &trans &trans      &trans         &bt BT_SEL 3   &bt BT_DISC 3 &trans &trans &trans &trans
+   &trans &trans &trans &trans &trans &trans         &bt CLEAR  &kp trans &trans &trans &trans &trans
+   &trans &trans &trans &trans &trans &trans         &bt SEL_1  &kp trans &trans &trans &trans &trans
+   &trans &trans &trans &trans &trans &trans         &kp trans  &kp trans &trans &trans &trans &trans
                           &kp LGUI &mo LOWER &kp SPACE    &kp RET  &mo RAISE   &kp RALT
                         >;
                 };
