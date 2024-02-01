@@ -31,19 +31,19 @@
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // | TAB  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  '  | HOME |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  ?  | CAPS|
+// | SHFT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  '  | DEL |
+// | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  ?  | CAPS|
 //                    | ALT | LWR | SPC |   | ENT | RSE  | GUI |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O     &kp P     &kp BSPC
-   &kp LSHFT &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L     &kp SQT   &kp HOME
+   &kp LSHFT &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L     &kp SQT   &kp DEL
    &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT   &kp QMARK &kp CAPS
                   &kp LALT &mo LOWER &kp SPACE   &kp RET &mo RAISE &kp RGUI
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// | ESC  |  0  |  1  |  2  |  3 |     |    |    |     |     |     |     | DEL     |
+// |      |  0  |  1  |  2  |  3 |     |    |    |     |     |     |     |         |
 // |      |     |  4  |  5  |  6 |     |    |    |     |     |     |     |         |
 // |      |     |  7  |  8  |  9 |     |    |    |     |     |     |     |LEDPWROFF|
 //                    | GUI |    | SPC |    |    |     | ALT |
@@ -57,9 +57,9 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// | TAB  |  !  |  @  |  #  |  _  |     |    |Home |      |Up  |  (  |  )  | BKSP |
-// | CTRL |  $  |  %  |  ^  |     |     |    |End  |  Left|Down|Right|  \  |  `   |
-// | SHFT |  &  |  *  | ()  |     |     |    |  _  |  +  |  {  |  }  | "|" |  ~   |
+// |  ~   |  !  |  @  |  #  |  $  |  %  |    |Home |     |Up   |     |     | BK  |
+// | SHFT |  ^  |  &  |  *  |  () | ()  |    |End  | Left|Down |Right|     |  `  |
+// |   \  |  /  |  =  |  -  | []  |  [] |    |     |  _  |  +  |     |     |     |
 //                    | GUI |     | SPC |    | ENT |     | ALT |
                         bindings = <
    &kp TAB   &kp EXCL &kp AT    &kp MINUS &trans   &trans      &kp HOME  &trans         &kp UP         &kp LPAR        &kp RPAR &kp BSPC
