@@ -63,7 +63,7 @@
 //                    | GUI | LWR | SPC |                         | ENT | RSE | ALT |
                         bindings = <
    &kp TILDE &kp EXCL  &kp AT    &kp HASH  &kp DLLR &kp PRCNT     &kp HOME  &trans         &kp UP         &trans          &trans &trans
-   &kp SHFT  &kp CARET &kp AMPS  &kp STAR  &kp LPAR &kp RPAR      &kp END   &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &trans &trans
+   &kp LSHFT &kp CARET &kp AMPS  &kp STAR  &kp LPAR &kp RPAR      &kp END   &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &trans &trans
    &kp BSLH  &kp FSLH  &kp LBRC  &kp RBRC  &kp LBKT &kp RBKT      &trans    &trans         &trans         &trans          &trans &trans
                              &kp LGUI &mo LOWER &kp SPACE         &kp RET   &mo RAISE      &kp RALT
                         >;
