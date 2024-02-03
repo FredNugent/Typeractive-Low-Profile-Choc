@@ -76,8 +76,8 @@
 // |      |     |     |     |      |     |           |      |     |      |     |     |         |
 //                    | GUI | ALT  | SPC |           | ENT  | RSE | ALT |
                         bindings = <
-   &trans &trans &trans &trans &trans &trans         &bt CLEAR  &trans &trans &trans &trans &trans
-   &trans &trans &trans &trans &trans &trans         &bt SEL_1  &trans &trans &trans &trans &trans
+   &trans &trans &trans &trans &trans &trans         &bt BT_CLEAR  &trans &trans &trans &trans &trans
+   &trans &trans &trans &trans &trans &trans         &bt BT_SEL_0  &trans &trans &trans &trans &trans
    &trans &trans &trans &trans &trans &trans         &trans     &trans &trans &trans &trans &trans
                 &kp LGUI &mo LOWER &kp SPACE         &kp RET  &mo RAISE   &kp RALT
                         >;
