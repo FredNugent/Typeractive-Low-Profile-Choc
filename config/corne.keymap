@@ -44,12 +44,12 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// | ESC  |  +  |  1  |  2  |  3  |     |                |    |    |     |     |       | RGBTOG   |  
+// | ESC  |  +  |  1  |  2  |  3  |     |                | ;  |    |     |     |       | RGBTOG   |  
 // |      |  -  |  4  |  5  |  6  |     |                |    |    |     |     |       | RGBCOLOR |
 // |      |  0  |  7  |  8  |  9  |     |                |    |    |     |     |LED ON | LED OFF  |
 //                    | GUI | LWR | SPC |                | ENT| RSE| ALT |
                         bindings = <
-   &kp ESC &kp PLUS  &kp N1 &kp N2 &kp N3  &trans          &trans &trans &trans &trans &trans &rgb_ug RGB_TOG
+   &kp ESC &kp PLUS  &kp N1 &kp N2 &kp N3  &trans          &kp SEMI &trans &trans &trans &trans &rgb_ug RGB_TOG
    &trans  &kp MINUS &kp N4 &kp N5 &kp N6  &trans          &trans &trans &trans &trans &trans &rgb_ug RGB_COLOR_HSB(255, 234, 0)
    &trans  &kp N0    &kp N7 &kp N8 &kp N9  &trans          &trans &trans &trans &trans &ext_power EP_ON &ext_power EP_OFF
                           &kp LGUI &mo LOWER &kp SPACE    &kp RET  &mo RAISE   &kp RALT
@@ -60,7 +60,7 @@
 // -----------------------------------------------------------------------------------------
 // |  ~   |  !  |  @  |  #  |  $  |  %  |                         |Home |     |Up   |     |     |     |
 // | SHFT |  ^  |  &  |  *  |  () | ()  |                         |End  | Left|Down |Right|     |     |
-// |   \  |  /  |  {  |  }  | []  |  [] |                         |     |     |     |     |     |     |
+// |   \  |  /  |  {  |  }  | []  |  [] |                         |    |     |     |     |     |     |
 //                    | GUI | LWR | SPC |                         | ENT | RSE | ALT |
                         bindings = <
    &kp TILDE &kp EXCL  &kp AT    &kp HASH  &kp DLLR &kp PRCNT     &kp HOME  &trans         &kp UP         &trans          &trans &trans
