@@ -72,9 +72,9 @@
 
                 tri_layer {
 // -----------------------------------------------------------------------------------------
-// |      |     |     |     |      |     |           |BTCLR |      |      |     |     |     |
-// |      |     |     |     |      |     |           |Note10|SrfPr |Desktp|LnxPr|     |     |
-// |      |     |     |     |      |     |           |RGB ON|RGBOFF|RGBCLR|     |     |     |  
+// |      |     |     |     |      |     |           |BTCLR |      |      |      |     |     |
+// |      |     |     |     |      |     |           |Desktp|Phone |SurfPR|LinxPR|     |     |
+// |      |     |     |     |      |     |           |RGB ON|RGBOFF|RGBCLR|      |     |     |  
 //                    | GUI | ALT  | SPC |           | ENT  | RSE | ALT |
                         bindings = <
    &trans &trans &trans &trans &trans &trans         &bt BT_CLR          &trans          &trans                             &trans       &trans &trans
