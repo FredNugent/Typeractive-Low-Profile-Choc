@@ -72,14 +72,14 @@
 
                 tri_layer {
 // -----------------------------------------------------------------------------------------
-// |BTCLR |BTCAL|     |     |     |     |           |DiscDP|DiscPh|DiscSP| Disc?| Disc?|     |  
-// |      |     |     |     |     |     |           |Desktp|Phone |SurfPR|  ?   |   ?  |     |
-// |RGB ON|RGBOFF|RGBCLR    |     |     |           |     |       |      |      |      |     |
+// |BTCLR |BTCAL |      |     |     |     |           |DiscDP|DiscPh|DiscSP| Disc?| Disc?|     |  
+// |EP OFF|EP ON |EPTOG |     |     |     |           |Desktp|Phone |SurfPR|  ?   |   ?  |     |
+// |RGB ON|RGBOFF|RGBCLR|     |     |     |           |     |       |      |      |      |     |
 //                    | GUI | ALT  | SPC |           | ENT  | RSE | ALT |
                         bindings = <
-   &bt BT_CLR      &bt BT_CLR_ALL  &trans                             &trans &trans &trans       &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &trans  &trans
-   &trans          &trans          &trans                             &trans &trans &trans       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans  &trans
-   &rgb_ug RGB_ON  &rgb_ug RGB_OFF &rgb_ug RGB_COLOR_HSB(255, 234, 0) &trans &trans &trans       &trans        &trans        &trans        &trans        &trans  &trans
+   &bt BT_CLR         &bt BT_CLR_ALL    &trans            &trans &trans &trans       &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &trans  &trans
+   &ext_power EP_OFF  &ext_power EP_ON  &ext_power EP_TOG &trans &trans &trans       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans  &trans
+   &rgb_ug RGB_ON     &rgb_ug RGB_OFF &rgb_ug RGB_COLOR_HSB(255, 234, 0) &trans &trans &trans       &trans        &trans        &trans        &trans        &trans  &trans
                 &kp LGUI &mo LOWER &kp SPACE                                                     &kp RET  &mo RAISE  &kp RALT
                         >;
                 };
