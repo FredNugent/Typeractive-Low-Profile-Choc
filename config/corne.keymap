@@ -9,6 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/mouse.h>
 
 //Renaming Layers to Right, Left and Tri
 #define DEFAULT 0
@@ -58,12 +59,12 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  ~   |  !  |  @  |  #  |  $  |  %  |                         |Home |     |Up   |     |     |     |
+// |  ~   |  !  |  @  |  #  |  $  |  %  |                         |Home | Rclk|Up   |     |     |     |
 // | SHFT |  ^  |  &  |  *  |  () | ()  |                         |End  | Left|Down |Right|     |     |
 // |   \  |  /  |  {  |  }  | []  |  [] |                         |     |     |     |     |     |     |
 //                    | GUI | LWR | SPC |                         | ENT | RSE | ALT |
                         bindings = <
-   &kp TILDE &kp EXCL  &kp AT    &kp HASH  &kp DLLR &kp PRCNT     &kp HOME  &trans         &kp UP         &trans          &trans &trans
+   &kp TILDE &kp EXCL  &kp AT    &kp HASH  &kp DLLR &kp PRCNT     &kp HOME  &mkp LCLK         &kp UP         &trans          &trans &trans
    &kp LSHFT &kp CARET &kp AMPS  &kp STAR  &kp LPAR &kp RPAR      &kp END   &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &trans &trans
    &kp BSLH  &kp FSLH  &kp LBRC  &kp RBRC  &kp LBKT &kp RBKT      &trans    &trans         &trans         &trans          &trans &trans
                              &kp LGUI &mo LOWER &kp SPACE         &kp RET   &mo RAISE      &kp RALT
